@@ -1,0 +1,20 @@
+PODS:
+  - XiangHongKit (0.0.1):
+    - XiangHongKit/Extensions (= 0.0.1)
+  - XiangHongKit/Extensions (0.0.1):
+    - XiangHongKit/Extensions/UIColor (= 0.0.1)
+  - XiangHongKit/Extensions/UIColor (0.0.1)
+
+DEPENDENCIES:
+  - XiangHongKit
+
+SPEC REPOS:
+  trunk:
+    - XiangHongKit
+
+SPEC CHECKSUMS:
+  XiangHongKit: 6b54498baba54aee72f35f4f4d69b41301085c0d
+
+PODFILE CHECKSUM: 8ea75f791f9e345ea6113513ec5852fb7bd56f69
+
+COCOAPODS: 1.8.4
