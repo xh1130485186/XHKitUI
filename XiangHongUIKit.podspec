@@ -25,9 +25,8 @@ Pod::Spec.new do |spec|
   spec.source_files = 'UIComponent/*.{h,m}'
   
   spec.subspec 'XHContainer' do |subpec|
-    ssubpec.dependency 'XiangHongKit'
-    ssubpec.source_files = 'UIComponent/XHContainer/*.{h,m}'
-    
+    subpec.dependency "XiangHongKit"
+    subpec.source_files = 'UIComponent/XHContainer/*.{h,m}'
   end
   
   spec.subspec 'UILabel' do |subpec|
@@ -39,7 +38,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'XHHorizontalMenu' do |subpec|
-    subpec.dependency 'XiangHongKit/Extensions'
+    subpec.dependency "XiangHongKit/Extensions"
     subpec.source_files = 'UIComponent/XHHorizontalMenu/*.{h,m}'
   end
   
@@ -48,7 +47,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'Theme' do |subpec|
-    subpec.dependency 'XiangHongKit/Common'
+    subpec.dependency "XiangHongKit/Common"
     subpec.source_files = 'UIComponent/Theme/*.{h,m}'
   end
   
@@ -57,7 +56,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'XHAlertController' do |subpec|
-     subpec.dependency 'XiangHongKit/Extensions/UIApplication'
+    subpec.dependency "XiangHongKit/Extensions/UIApplication"
     subpec.source_files = 'UIComponent/XHAlertController/*.{h,m}'
   end
   
@@ -65,13 +64,6 @@ Pod::Spec.new do |spec|
     subpec.source_files = 'UIComponent/XHButton/*.{h,m}'
   end
   
-  #spec.subspec 'XHDropDownMenu' do |subpec|
-   # subpec.dependency "XiangHongKit"
-    #subpec.dependency 'XiangHongUIKit/UIComponent/XHButton'
-    #subpec.source_files = 'UIComponent/XHDropDownMenu/*.{h,m}'
-  #end
-  
-  spec.dependency 'XiangHongKit'
-  spec.dependency 'XHLoading'
+  spec.dependency "XiangHongKit"
 
 end
