@@ -24,5 +24,25 @@ Pod::Spec.new do |spec|
   
   spec.dependency "XiangHongKit"
   spec.source_files = 'XHUIKitDefines.h'
+  
+  spec.subspec 'UILabel' do |subpec|
+    subpec.source_files = 'UIComponent/UILabel/*.{h,m}'
+  end
+  
+  spec.subspec 'XHTextView' do |subpec|
+    subpec.source_files = 'UIComponent/XHTextView/*.{h,m}'
+  end
+  
+  spec.subspec 'XHProgressView' do |subpec|
+    subpec.source_files = 'UIComponent/XHProgressView/*.{h,m}'
+  end
+  
+  spec.subspec 'XHChart' do |subpec|
+    subpec.source_files = 'UIComponent/XHChart/*.{h,m}'
+  end
+  
+  spec.subspec 'XHButton' do |subpec|
+    subpec.source_files = 'UIComponent/XHButton/*.{h,m}'
+  end
 
 end
