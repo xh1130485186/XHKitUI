@@ -9,7 +9,7 @@
 #ifndef XHKitUIDefines_h
 #define XHKitUIDefines_h
 
-XH_INLINE NSString *XHUIBundlePathForResource(NSString *bundleName, Class aClass, NSString *resourceName, NSString *ofType, BOOL times) {
+static inline NSString *XHUIBundlePathForResource(NSString *bundleName, Class aClass, NSString *resourceName, NSString *ofType, BOOL times) {
     NSBundle *bundle = [NSBundle bundleForClass:aClass];
     NSURL *url = [bundle URLForResource:bundleName withExtension:@"bundle"];
     bundle = [NSBundle bundleWithURL:url];
