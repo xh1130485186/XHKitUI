@@ -17,9 +17,8 @@ extern CGFloat const XHTextViewPaddingBottom;
 
 
 @property(nullable, nonatomic,copy) IBInspectable NSString *placeholder;
-/**
- *  placeholder 在默认位置上的偏移（默认位置会自动根据 textContainerInset、contentInset 来调整）
- */
+
+/// placeholder 在默认位置上的偏移（默认位置会自动根据 textContainerInset、contentInset 来调整）
 @property(nonatomic, assign) UIEdgeInsets placeholderMargins;
 
 @end

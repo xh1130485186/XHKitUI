@@ -21,20 +21,17 @@ CGFloat const XHTextViewPaddingBottom = 8;
 
 @implementation XHTextView
 
--(void)initialize
-{
+- (void)initialize {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPlaceholder) name:UITextViewTextDidChangeNotification object:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPlaceholder) name:UITextViewTextDidBeginEditingNotification object:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshPlaceholder) name:UITextViewTextDidEndEditingNotification object:self];
 }
 
--(void)dealloc
-{
+-(void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self initialize];
@@ -42,14 +39,12 @@ CGFloat const XHTextViewPaddingBottom = 8;
     return self;
 }
 
--(void)awakeFromNib
-{
+- (void)awakeFromNib {
     [super awakeFromNib];
     [self initialize];
 }
 
--(void)refreshPlaceholder
-{
+-(void)refreshPlaceholder {
     if([[self text] length] || self.isFirstResponder)
     {
         [_placeHolderLabel setAlpha:0];
@@ -63,14 +58,12 @@ CGFloat const XHTextViewPaddingBottom = 8;
     [self layoutIfNeeded];
 }
 
-- (void)setText:(NSString *)text
-{
+- (void)setText:(NSString *)text {
     [super setText:text];
     [self refreshPlaceholder];
 }
 
--(void)setFont:(UIFont *)font
-{
+- (void)setFont:(UIFont *)font {
     [super setFont:font];
     _placeHolderLabel.font = self.font;
     
@@ -78,8 +71,7 @@ CGFloat const XHTextViewPaddingBottom = 8;
     [self layoutIfNeeded];
 }
 
--(void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     [_placeHolderLabel sizeToFit];
@@ -91,8 +83,7 @@ CGFloat const XHTextViewPaddingBottom = 8;
     }
 }
 
--(void)setPlaceholder:(NSString *)placeholder
-{
+- (void)setPlaceholder:(NSString *)placeholder {
     _placeholder = placeholder;
     
     if (!_placeHolderLabel)
@@ -112,8 +103,7 @@ CGFloat const XHTextViewPaddingBottom = 8;
 }
 
 //When any text changes on textField, the delegate getter is called. At this time we refresh the textView's placeholder
--(id<UITextViewDelegate>)delegate
-{
+- (id<UITextViewDelegate>)delegate {
     [self refreshPlaceholder];
     return [super delegate];
 }

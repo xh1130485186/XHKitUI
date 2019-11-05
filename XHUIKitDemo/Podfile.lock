@@ -1,49 +1,47 @@
 PODS:
-  - XiangHongKit (0.4.0):
-    - XiangHongKit/Common (= 0.4.0)
-    - XiangHongKit/Extensions (= 0.4.0)
-    - XiangHongKit/Tools (= 0.4.0)
-  - XiangHongKit/Common (0.4.0):
+  - XiangHongKit (0.4.1):
+    - XiangHongKit/Common (= 0.4.1)
+    - XiangHongKit/Extensions (= 0.4.1)
+    - XiangHongKit/Tools (= 0.4.1)
+  - XiangHongKit/Common (0.4.1):
     - XiangHongKit/Extensions/DZNEmptyDataSet
     - XiangHongKit/Extensions/UIImage
     - XiangHongKit/Extensions/UIView
-  - XiangHongKit/Extensions (0.4.0):
-    - XiangHongKit/Extensions/DZNEmptyDataSet (= 0.4.0)
-    - XiangHongKit/Extensions/NSAttributedString (= 0.4.0)
-    - XiangHongKit/Extensions/NSDate (= 0.4.0)
-    - XiangHongKit/Extensions/NSObject (= 0.4.0)
-    - XiangHongKit/Extensions/NSString (= 0.4.0)
-    - XiangHongKit/Extensions/UIApplication (= 0.4.0)
-    - XiangHongKit/Extensions/UIColor (= 0.4.0)
-    - XiangHongKit/Extensions/UIImage (= 0.4.0)
-    - XiangHongKit/Extensions/UIView (= 0.4.0)
-    - XiangHongKit/Extensions/UIViewController (= 0.4.0)
-  - XiangHongKit/Extensions/DZNEmptyDataSet (0.4.0)
-  - XiangHongKit/Extensions/NSAttributedString (0.4.0)
-  - XiangHongKit/Extensions/NSDate (0.4.0)
-  - XiangHongKit/Extensions/NSObject (0.4.0)
-  - XiangHongKit/Extensions/NSString (0.4.0)
-  - XiangHongKit/Extensions/UIApplication (0.4.0)
-  - XiangHongKit/Extensions/UIColor (0.4.0)
-  - XiangHongKit/Extensions/UIImage (0.4.0):
+  - XiangHongKit/Extensions (0.4.1):
+    - XiangHongKit/Extensions/DZNEmptyDataSet (= 0.4.1)
+    - XiangHongKit/Extensions/NSAttributedString (= 0.4.1)
+    - XiangHongKit/Extensions/NSDate (= 0.4.1)
+    - XiangHongKit/Extensions/NSObject (= 0.4.1)
+    - XiangHongKit/Extensions/NSString (= 0.4.1)
+    - XiangHongKit/Extensions/UIApplication (= 0.4.1)
+    - XiangHongKit/Extensions/UIColor (= 0.4.1)
+    - XiangHongKit/Extensions/UIImage (= 0.4.1)
+    - XiangHongKit/Extensions/UIView (= 0.4.1)
+    - XiangHongKit/Extensions/UIViewController (= 0.4.1)
+  - XiangHongKit/Extensions/DZNEmptyDataSet (0.4.1)
+  - XiangHongKit/Extensions/NSAttributedString (0.4.1)
+  - XiangHongKit/Extensions/NSDate (0.4.1)
+  - XiangHongKit/Extensions/NSObject (0.4.1)
+  - XiangHongKit/Extensions/NSString (0.4.1)
+  - XiangHongKit/Extensions/UIApplication (0.4.1)
+  - XiangHongKit/Extensions/UIColor (0.4.1)
+  - XiangHongKit/Extensions/UIImage (0.4.1):
     - XiangHongKit/Extensions/UIColor
-  - XiangHongKit/Extensions/UIView (0.4.0)
-  - XiangHongKit/Extensions/UIViewController (0.4.0)
-  - XiangHongKit/Tools (0.4.0):
-    - XiangHongKit/Tools/QMUIKeyboard (= 0.4.0)
-    - XiangHongKit/Tools/RFJModel (= 0.4.0)
-    - XiangHongKit/Tools/XHContainer (= 0.4.0)
-    - XiangHongKit/Tools/XHFile (= 0.4.0)
-    - XiangHongKit/Tools/XHKeychain (= 0.4.0)
-    - XiangHongKit/Tools/XHLocation (= 0.4.0)
-    - XiangHongKit/Tools/XHTimer (= 0.4.0)
-  - XiangHongKit/Tools/QMUIKeyboard (0.4.0)
-  - XiangHongKit/Tools/RFJModel (0.4.0)
-  - XiangHongKit/Tools/XHContainer (0.4.0)
-  - XiangHongKit/Tools/XHFile (0.4.0)
-  - XiangHongKit/Tools/XHKeychain (0.4.0)
-  - XiangHongKit/Tools/XHLocation (0.4.0)
-  - XiangHongKit/Tools/XHTimer (0.4.0)
+  - XiangHongKit/Extensions/UIView (0.4.1)
+  - XiangHongKit/Extensions/UIViewController (0.4.1)
+  - XiangHongKit/Tools (0.4.1):
+    - XiangHongKit/Tools/QMUIKeyboard (= 0.4.1)
+    - XiangHongKit/Tools/RFJModel (= 0.4.1)
+    - XiangHongKit/Tools/XHFile (= 0.4.1)
+    - XiangHongKit/Tools/XHKeychain (= 0.4.1)
+    - XiangHongKit/Tools/XHLocation (= 0.4.1)
+    - XiangHongKit/Tools/XHTimer (= 0.4.1)
+  - XiangHongKit/Tools/QMUIKeyboard (0.4.1)
+  - XiangHongKit/Tools/RFJModel (0.4.1)
+  - XiangHongKit/Tools/XHFile (0.4.1)
+  - XiangHongKit/Tools/XHKeychain (0.4.1)
+  - XiangHongKit/Tools/XHLocation (0.4.1)
+  - XiangHongKit/Tools/XHTimer (0.4.1)
 
 DEPENDENCIES:
   - XiangHongKit
@@ -53,7 +51,7 @@ SPEC REPOS:
     - XiangHongKit
 
 SPEC CHECKSUMS:
-  XiangHongKit: ac03fe5077ca2f355483a47f1774dc1fa77bbc0d
+  XiangHongKit: eefc5f968f49127aed2ee9e346dd8eb4da452847
 
 PODFILE CHECKSUM: c0c71616c28800bed1571460dd00c6ce19a752cf
 
