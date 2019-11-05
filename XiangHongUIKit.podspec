@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "XiangHongUIKit"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.1"
   spec.summary      = "XiangHongUIKit，界面ui集合。"
   
   spec.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  spec.source_files = 'UIComponent/*.{h,m}'
+  # spec.source_files = 'UIComponent/*.{h,m}'
   
   spec.subspec 'XHContainer' do |subpec|
     subpec.dependency "XiangHongKit"
