@@ -23,7 +23,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   
   spec.dependency "XiangHongKit"
-  spec.public_header_files = 'XHUIKit.h'
   spec.source_files = 'XHUIKitDefines.h'
 
 end
