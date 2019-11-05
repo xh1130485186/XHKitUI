@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,9 +16,34 @@
 		1324110823703A7F00F5BCFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1324110723703A7F00F5BCFE /* main.m */; };
 		1324111223703A7F00F5BCFE /* XHKitUIDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1324111123703A7F00F5BCFE /* XHKitUIDemoTests.m */; };
 		1324111D23703A7F00F5BCFE /* XHKitUIDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1324111C23703A7F00F5BCFE /* XHKitUIDemoUITests.m */; };
-		1FAD65DD76912155BABAFD2B /* libPods-XHKitUIDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0E35EDD7B80362F7F1BACF /* libPods-XHKitUIDemoTests.a */; };
-		3D010C3E4A3393D38369CF83 /* libPods-XHKitUIDemo-XHKitUIDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F97FF4EB7669504839F7BF6 /* libPods-XHKitUIDemo-XHKitUIDemoUITests.a */; };
-		99236A27D056CD8F7D276556 /* libPods-XHKitUIDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF89B01AA7E29048EBAEE307 /* libPods-XHKitUIDemo.a */; };
+		13F916C62371150F0036F0B6 /* XHDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9168B2371150F0036F0B6 /* XHDatePicker.m */; };
+		13F916C72371150F0036F0B6 /* XHSecondMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9168E2371150F0036F0B6 /* XHSecondMenu.m */; };
+		13F916C82371150F0036F0B6 /* XHPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916902371150F0036F0B6 /* XHPickerView.m */; };
+		13F916C92371150F0036F0B6 /* XHPopupSectionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916932371150F0036F0B6 /* XHPopupSectionMenu.m */; };
+		13F916CA2371150F0036F0B6 /* XHPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916942371150F0036F0B6 /* XHPopupMenu.m */; };
+		13F916CB2371150F0036F0B6 /* XHDigitalAnimationLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916982371150F0036F0B6 /* XHDigitalAnimationLabel.m */; };
+		13F916CC2371150F0036F0B6 /* XHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9169B2371150F0036F0B6 /* XHTextView.m */; };
+		13F916CD2371150F0036F0B6 /* XHHorizontalMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F9169F2371150F0036F0B6 /* XHHorizontalMenuView.m */; };
+		13F916CE2371150F0036F0B6 /* XHCircleShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916A22371150F0036F0B6 /* XHCircleShapeLayer.m */; };
+		13F916CF2371150F0036F0B6 /* XHCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916A32371150F0036F0B6 /* XHCircleProgressView.m */; };
+		13F916D02371150F0036F0B6 /* XHUIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916A92371150F0036F0B6 /* XHUIConfiguration.m */; };
+		13F916D12371150F0036F0B6 /* XHCommonThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916AB2371150F0036F0B6 /* XHCommonThemeViewController.m */; };
+		13F916D22371150F0036F0B6 /* XHThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916AC2371150F0036F0B6 /* XHThemeManager.m */; };
+		13F916D32371150F0036F0B6 /* XHMeterChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916B12371150F0036F0B6 /* XHMeterChartView.m */; };
+		13F916D42371150F0036F0B6 /* XHPieChartSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916B22371150F0036F0B6 /* XHPieChartSliceLayer.m */; };
+		13F916D52371150F0036F0B6 /* XHBarChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916B32371150F0036F0B6 /* XHBarChat.m */; };
+		13F916D62371150F0036F0B6 /* XHPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916B62371150F0036F0B6 /* XHPieChart.m */; };
+		13F916D72371150F0036F0B6 /* XHBarChatElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916B72371150F0036F0B6 /* XHBarChatElement.m */; };
+		13F916D82371150F0036F0B6 /* XHChartHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916B92371150F0036F0B6 /* XHChartHelper.m */; };
+		13F916D92371150F0036F0B6 /* XHChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916BC2371150F0036F0B6 /* XHChat.m */; };
+		13F916DA2371150F0036F0B6 /* XHAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916BE2371150F0036F0B6 /* XHAlertController.m */; };
+		13F916DB2371150F0036F0B6 /* XHDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916C22371150F0036F0B6 /* XHDropDownMenu.m */; };
+		13F916DC2371150F0036F0B6 /* XHAdjustmentImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F916C52371150F0036F0B6 /* XHAdjustmentImageButton.m */; };
+		13F916DE237115770036F0B6 /* xhkit.ui.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 13F916DD237115770036F0B6 /* xhkit.ui.bundle */; };
+		13F916E3237117910036F0B6 /* XiangHongUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 13F916E2237117910036F0B6 /* XiangHongUIKit.podspec */; };
+		24926333F5A12461E9F1C769 /* Pods_XHKitUIDemo_XHKitUIDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9B2656FF5F66F4FF132E52 /* Pods_XHKitUIDemo_XHKitUIDemoUITests.framework */; };
+		6449FCCCB589610F7B483E1A /* Pods_XHKitUIDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91C10359020A84E95F17E11 /* Pods_XHKitUIDemoTests.framework */; };
+		9643712B54722189EB2EAB5C /* Pods_XHKitUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933404DD0D9D6B06147D54FA /* Pods_XHKitUIDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,14 +83,67 @@
 		1324111823703A7F00F5BCFE /* XHKitUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHKitUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1324111C23703A7F00F5BCFE /* XHKitUIDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHKitUIDemoUITests.m; sourceTree = "<group>"; };
 		1324111E23703A7F00F5BCFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F9168A2371150F0036F0B6 /* XHDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDatePicker.h; sourceTree = "<group>"; };
+		13F9168B2371150F0036F0B6 /* XHDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDatePicker.m; sourceTree = "<group>"; };
+		13F9168D2371150F0036F0B6 /* XHSecondMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSecondMenu.h; sourceTree = "<group>"; };
+		13F9168E2371150F0036F0B6 /* XHSecondMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSecondMenu.m; sourceTree = "<group>"; };
+		13F916902371150F0036F0B6 /* XHPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPickerView.m; sourceTree = "<group>"; };
+		13F916912371150F0036F0B6 /* XHPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPickerView.h; sourceTree = "<group>"; };
+		13F916932371150F0036F0B6 /* XHPopupSectionMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPopupSectionMenu.m; sourceTree = "<group>"; };
+		13F916942371150F0036F0B6 /* XHPopupMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPopupMenu.m; sourceTree = "<group>"; };
+		13F916952371150F0036F0B6 /* XHPopupSectionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPopupSectionMenu.h; sourceTree = "<group>"; };
+		13F916962371150F0036F0B6 /* XHPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPopupMenu.h; sourceTree = "<group>"; };
+		13F916982371150F0036F0B6 /* XHDigitalAnimationLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDigitalAnimationLabel.m; sourceTree = "<group>"; };
+		13F916992371150F0036F0B6 /* XHDigitalAnimationLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDigitalAnimationLabel.h; sourceTree = "<group>"; };
+		13F9169B2371150F0036F0B6 /* XHTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHTextView.m; sourceTree = "<group>"; };
+		13F9169C2371150F0036F0B6 /* XHTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTextView.h; sourceTree = "<group>"; };
+		13F9169E2371150F0036F0B6 /* XHHorizontalMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHHorizontalMenuView.h; sourceTree = "<group>"; };
+		13F9169F2371150F0036F0B6 /* XHHorizontalMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHHorizontalMenuView.m; sourceTree = "<group>"; };
+		13F916A12371150F0036F0B6 /* XHCircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCircleProgressView.h; sourceTree = "<group>"; };
+		13F916A22371150F0036F0B6 /* XHCircleShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCircleShapeLayer.m; sourceTree = "<group>"; };
+		13F916A32371150F0036F0B6 /* XHCircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCircleProgressView.m; sourceTree = "<group>"; };
+		13F916A42371150F0036F0B6 /* XHCircleShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCircleShapeLayer.h; sourceTree = "<group>"; };
+		13F916A62371150F0036F0B6 /* XHCommonThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHCommonThemeViewController.h; sourceTree = "<group>"; };
+		13F916A72371150F0036F0B6 /* XHUIConfigurationThemeMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIConfigurationThemeMacros.h; sourceTree = "<group>"; };
+		13F916A82371150F0036F0B6 /* XHThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHThemeManager.h; sourceTree = "<group>"; };
+		13F916A92371150F0036F0B6 /* XHUIConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHUIConfiguration.m; sourceTree = "<group>"; };
+		13F916AA2371150F0036F0B6 /* XHThemeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHThemeProtocol.h; sourceTree = "<group>"; };
+		13F916AB2371150F0036F0B6 /* XHCommonThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHCommonThemeViewController.m; sourceTree = "<group>"; };
+		13F916AC2371150F0036F0B6 /* XHThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHThemeManager.m; sourceTree = "<group>"; };
+		13F916AD2371150F0036F0B6 /* XHUIConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIConfiguration.h; sourceTree = "<group>"; };
+		13F916AF2371150F0036F0B6 /* XHBarChatElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBarChatElement.h; sourceTree = "<group>"; };
+		13F916B02371150F0036F0B6 /* XHPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPieChart.h; sourceTree = "<group>"; };
+		13F916B12371150F0036F0B6 /* XHMeterChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHMeterChartView.m; sourceTree = "<group>"; };
+		13F916B22371150F0036F0B6 /* XHPieChartSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPieChartSliceLayer.m; sourceTree = "<group>"; };
+		13F916B32371150F0036F0B6 /* XHBarChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBarChat.m; sourceTree = "<group>"; };
+		13F916B42371150F0036F0B6 /* XHChartHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHChartHelper.h; sourceTree = "<group>"; };
+		13F916B52371150F0036F0B6 /* XHChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHChat.h; sourceTree = "<group>"; };
+		13F916B62371150F0036F0B6 /* XHPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPieChart.m; sourceTree = "<group>"; };
+		13F916B72371150F0036F0B6 /* XHBarChatElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHBarChatElement.m; sourceTree = "<group>"; };
+		13F916B82371150F0036F0B6 /* XHBarChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHBarChat.h; sourceTree = "<group>"; };
+		13F916B92371150F0036F0B6 /* XHChartHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHChartHelper.m; sourceTree = "<group>"; };
+		13F916BA2371150F0036F0B6 /* XHPieChartSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPieChartSliceLayer.h; sourceTree = "<group>"; };
+		13F916BB2371150F0036F0B6 /* XHMeterChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMeterChartView.h; sourceTree = "<group>"; };
+		13F916BC2371150F0036F0B6 /* XHChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHChat.m; sourceTree = "<group>"; };
+		13F916BE2371150F0036F0B6 /* XHAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHAlertController.m; sourceTree = "<group>"; };
+		13F916BF2371150F0036F0B6 /* XHAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAlertController.h; sourceTree = "<group>"; };
+		13F916C12371150F0036F0B6 /* XHDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDropDownMenu.h; sourceTree = "<group>"; };
+		13F916C22371150F0036F0B6 /* XHDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDropDownMenu.m; sourceTree = "<group>"; };
+		13F916C42371150F0036F0B6 /* XHAdjustmentImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAdjustmentImageButton.h; sourceTree = "<group>"; };
+		13F916C52371150F0036F0B6 /* XHAdjustmentImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHAdjustmentImageButton.m; sourceTree = "<group>"; };
+		13F916DD237115770036F0B6 /* xhkit.ui.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = xhkit.ui.bundle; sourceTree = "<group>"; };
+		13F916E1237116300036F0B6 /* XHKitUIDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHKitUIDefines.h; sourceTree = "<group>"; };
+		13F916E2237117910036F0B6 /* XiangHongUIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = XiangHongUIKit.podspec; path = ../../XiangHongUIKit.podspec; sourceTree = "<group>"; };
+		38D3EEA1BD1A86D52A839037 /* Pods-XHKitUIDemo-XHKitUIDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHKitUIDemo-XHKitUIDemoTests.release.xcconfig"; path = "Target Support Files/Pods-XHKitUIDemo-XHKitUIDemoTests/Pods-XHKitUIDemo-XHKitUIDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D9B2656FF5F66F4FF132E52 /* Pods_XHKitUIDemo_XHKitUIDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHKitUIDemo_XHKitUIDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CAF7ED824C11D091B50FEC /* Pods-XHKitUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHKitUIDemo.release.xcconfig"; path = "Target Support Files/Pods-XHKitUIDemo/Pods-XHKitUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5EB38865F916589C37857F32 /* Pods-XHKitUIDemo-XHKitUIDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHKitUIDemo-XHKitUIDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-XHKitUIDemo-XHKitUIDemoUITests/Pods-XHKitUIDemo-XHKitUIDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6F97FF4EB7669504839F7BF6 /* libPods-XHKitUIDemo-XHKitUIDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHKitUIDemo-XHKitUIDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A948ED4487938755572353 /* Pods-XHKitUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHKitUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-XHKitUIDemo/Pods-XHKitUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		933404DD0D9D6B06147D54FA /* Pods_XHKitUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHKitUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC875B4B62FC016CE60C197A /* Pods-XHKitUIDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHKitUIDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-XHKitUIDemoTests/Pods-XHKitUIDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC152C7833DA59714856BD8D /* Pods-XHKitUIDemo-XHKitUIDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHKitUIDemo-XHKitUIDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-XHKitUIDemo-XHKitUIDemoUITests/Pods-XHKitUIDemo-XHKitUIDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DF89B01AA7E29048EBAEE307 /* libPods-XHKitUIDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHKitUIDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC0E35EDD7B80362F7F1BACF /* libPods-XHKitUIDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHKitUIDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E284E601A0CA05BAD609C0A9 /* Pods-XHKitUIDemo-XHKitUIDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHKitUIDemo-XHKitUIDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-XHKitUIDemo-XHKitUIDemoTests/Pods-XHKitUIDemo-XHKitUIDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F91C10359020A84E95F17E11 /* Pods_XHKitUIDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHKitUIDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99236A27D056CD8F7D276556 /* libPods-XHKitUIDemo.a in Frameworks */,
+				9643712B54722189EB2EAB5C /* Pods_XHKitUIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FAD65DD76912155BABAFD2B /* libPods-XHKitUIDemoTests.a in Frameworks */,
+				6449FCCCB589610F7B483E1A /* Pods_XHKitUIDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D010C3E4A3393D38369CF83 /* libPods-XHKitUIDemo-XHKitUIDemoUITests.a in Frameworks */,
+				24926333F5A12461E9F1C769 /* Pods_XHKitUIDemo_XHKitUIDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +199,8 @@
 		132410F423703A7E00F5BCFE /* XHKitUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				13F916872371150F0036F0B6 /* UIComponent */,
+				13F916E2237117910036F0B6 /* XiangHongUIKit.podspec */,
 				132410F523703A7E00F5BCFE /* AppDelegate.h */,
 				132410F623703A7E00F5BCFE /* AppDelegate.m */,
 				132410F823703A7E00F5BCFE /* SceneDelegate.h */,
@@ -154,6 +234,176 @@
 			path = XHKitUIDemoUITests;
 			sourceTree = "<group>";
 		};
+		13F916872371150F0036F0B6 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				13F916E1237116300036F0B6 /* XHKitUIDefines.h */,
+				13F916882371150F0036F0B6 /* XHContainer */,
+				13F916972371150F0036F0B6 /* UILabel */,
+				13F9169A2371150F0036F0B6 /* XHTextView */,
+				13F9169D2371150F0036F0B6 /* XHHorizontalMenu */,
+				13F916A02371150F0036F0B6 /* XHProgressView */,
+				13F916A52371150F0036F0B6 /* Theme */,
+				13F916AE2371150F0036F0B6 /* XHChart */,
+				13F916BD2371150F0036F0B6 /* XHAlertController */,
+				13F916C02371150F0036F0B6 /* XHDropDownMenu */,
+				13F916C32371150F0036F0B6 /* XHButton */,
+				13F916DD237115770036F0B6 /* xhkit.ui.bundle */,
+			);
+			name = UIComponent;
+			path = ../../UIComponent;
+			sourceTree = "<group>";
+		};
+		13F916882371150F0036F0B6 /* XHContainer */ = {
+			isa = PBXGroup;
+			children = (
+				13F916892371150F0036F0B6 /* XHDatePicker */,
+				13F9168C2371150F0036F0B6 /* XHSecondMenu */,
+				13F9168F2371150F0036F0B6 /* XHPickerView */,
+				13F916922371150F0036F0B6 /* XHPopupMenu */,
+			);
+			path = XHContainer;
+			sourceTree = "<group>";
+		};
+		13F916892371150F0036F0B6 /* XHDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				13F9168A2371150F0036F0B6 /* XHDatePicker.h */,
+				13F9168B2371150F0036F0B6 /* XHDatePicker.m */,
+			);
+			path = XHDatePicker;
+			sourceTree = "<group>";
+		};
+		13F9168C2371150F0036F0B6 /* XHSecondMenu */ = {
+			isa = PBXGroup;
+			children = (
+				13F9168D2371150F0036F0B6 /* XHSecondMenu.h */,
+				13F9168E2371150F0036F0B6 /* XHSecondMenu.m */,
+			);
+			path = XHSecondMenu;
+			sourceTree = "<group>";
+		};
+		13F9168F2371150F0036F0B6 /* XHPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				13F916912371150F0036F0B6 /* XHPickerView.h */,
+				13F916902371150F0036F0B6 /* XHPickerView.m */,
+			);
+			path = XHPickerView;
+			sourceTree = "<group>";
+		};
+		13F916922371150F0036F0B6 /* XHPopupMenu */ = {
+			isa = PBXGroup;
+			children = (
+				13F916962371150F0036F0B6 /* XHPopupMenu.h */,
+				13F916942371150F0036F0B6 /* XHPopupMenu.m */,
+				13F916952371150F0036F0B6 /* XHPopupSectionMenu.h */,
+				13F916932371150F0036F0B6 /* XHPopupSectionMenu.m */,
+			);
+			path = XHPopupMenu;
+			sourceTree = "<group>";
+		};
+		13F916972371150F0036F0B6 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				13F916992371150F0036F0B6 /* XHDigitalAnimationLabel.h */,
+				13F916982371150F0036F0B6 /* XHDigitalAnimationLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		13F9169A2371150F0036F0B6 /* XHTextView */ = {
+			isa = PBXGroup;
+			children = (
+				13F9169C2371150F0036F0B6 /* XHTextView.h */,
+				13F9169B2371150F0036F0B6 /* XHTextView.m */,
+			);
+			path = XHTextView;
+			sourceTree = "<group>";
+		};
+		13F9169D2371150F0036F0B6 /* XHHorizontalMenu */ = {
+			isa = PBXGroup;
+			children = (
+				13F9169E2371150F0036F0B6 /* XHHorizontalMenuView.h */,
+				13F9169F2371150F0036F0B6 /* XHHorizontalMenuView.m */,
+			);
+			path = XHHorizontalMenu;
+			sourceTree = "<group>";
+		};
+		13F916A02371150F0036F0B6 /* XHProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				13F916A12371150F0036F0B6 /* XHCircleProgressView.h */,
+				13F916A32371150F0036F0B6 /* XHCircleProgressView.m */,
+				13F916A42371150F0036F0B6 /* XHCircleShapeLayer.h */,
+				13F916A22371150F0036F0B6 /* XHCircleShapeLayer.m */,
+			);
+			path = XHProgressView;
+			sourceTree = "<group>";
+		};
+		13F916A52371150F0036F0B6 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				13F916A62371150F0036F0B6 /* XHCommonThemeViewController.h */,
+				13F916AB2371150F0036F0B6 /* XHCommonThemeViewController.m */,
+				13F916A82371150F0036F0B6 /* XHThemeManager.h */,
+				13F916AC2371150F0036F0B6 /* XHThemeManager.m */,
+				13F916AA2371150F0036F0B6 /* XHThemeProtocol.h */,
+				13F916AD2371150F0036F0B6 /* XHUIConfiguration.h */,
+				13F916A92371150F0036F0B6 /* XHUIConfiguration.m */,
+				13F916A72371150F0036F0B6 /* XHUIConfigurationThemeMacros.h */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		13F916AE2371150F0036F0B6 /* XHChart */ = {
+			isa = PBXGroup;
+			children = (
+				13F916B82371150F0036F0B6 /* XHBarChat.h */,
+				13F916B32371150F0036F0B6 /* XHBarChat.m */,
+				13F916AF2371150F0036F0B6 /* XHBarChatElement.h */,
+				13F916B72371150F0036F0B6 /* XHBarChatElement.m */,
+				13F916B42371150F0036F0B6 /* XHChartHelper.h */,
+				13F916B92371150F0036F0B6 /* XHChartHelper.m */,
+				13F916B52371150F0036F0B6 /* XHChat.h */,
+				13F916BC2371150F0036F0B6 /* XHChat.m */,
+				13F916BB2371150F0036F0B6 /* XHMeterChartView.h */,
+				13F916B12371150F0036F0B6 /* XHMeterChartView.m */,
+				13F916B02371150F0036F0B6 /* XHPieChart.h */,
+				13F916B62371150F0036F0B6 /* XHPieChart.m */,
+				13F916BA2371150F0036F0B6 /* XHPieChartSliceLayer.h */,
+				13F916B22371150F0036F0B6 /* XHPieChartSliceLayer.m */,
+			);
+			path = XHChart;
+			sourceTree = "<group>";
+		};
+		13F916BD2371150F0036F0B6 /* XHAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				13F916BF2371150F0036F0B6 /* XHAlertController.h */,
+				13F916BE2371150F0036F0B6 /* XHAlertController.m */,
+			);
+			path = XHAlertController;
+			sourceTree = "<group>";
+		};
+		13F916C02371150F0036F0B6 /* XHDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				13F916C12371150F0036F0B6 /* XHDropDownMenu.h */,
+				13F916C22371150F0036F0B6 /* XHDropDownMenu.m */,
+			);
+			path = XHDropDownMenu;
+			sourceTree = "<group>";
+		};
+		13F916C32371150F0036F0B6 /* XHButton */ = {
+			isa = PBXGroup;
+			children = (
+				13F916C42371150F0036F0B6 /* XHAdjustmentImageButton.h */,
+				13F916C52371150F0036F0B6 /* XHAdjustmentImageButton.m */,
+			);
+			path = XHButton;
+			sourceTree = "<group>";
+		};
 		1BA9BC5D790267D777129325 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,17 +413,18 @@
 				DC152C7833DA59714856BD8D /* Pods-XHKitUIDemo-XHKitUIDemoUITests.release.xcconfig */,
 				CC875B4B62FC016CE60C197A /* Pods-XHKitUIDemoTests.debug.xcconfig */,
 				06E3475B5E031189E738625E /* Pods-XHKitUIDemoTests.release.xcconfig */,
+				E284E601A0CA05BAD609C0A9 /* Pods-XHKitUIDemo-XHKitUIDemoTests.debug.xcconfig */,
+				38D3EEA1BD1A86D52A839037 /* Pods-XHKitUIDemo-XHKitUIDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		B886A834EAD60545DC45F785 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF89B01AA7E29048EBAEE307 /* libPods-XHKitUIDemo.a */,
-				6F97FF4EB7669504839F7BF6 /* libPods-XHKitUIDemo-XHKitUIDemoUITests.a */,
-				EC0E35EDD7B80362F7F1BACF /* libPods-XHKitUIDemoTests.a */,
+				933404DD0D9D6B06147D54FA /* Pods_XHKitUIDemo.framework */,
+				4D9B2656FF5F66F4FF132E52 /* Pods_XHKitUIDemo_XHKitUIDemoUITests.framework */,
+				F91C10359020A84E95F17E11 /* Pods_XHKitUIDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +440,7 @@
 				132410EE23703A7E00F5BCFE /* Sources */,
 				132410EF23703A7E00F5BCFE /* Frameworks */,
 				132410F023703A7E00F5BCFE /* Resources */,
+				877F8AE1DBA5E0FBDB27E572 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,6 +478,7 @@
 				1324111423703A7F00F5BCFE /* Sources */,
 				1324111523703A7F00F5BCFE /* Frameworks */,
 				1324111623703A7F00F5BCFE /* Resources */,
+				A6FE239378BDDAEEEBA1CA0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,7 +539,9 @@
 			files = (
 				1324110523703A7F00F5BCFE /* LaunchScreen.storyboard in Resources */,
 				1324110223703A7F00F5BCFE /* Assets.xcassets in Resources */,
+				13F916E3237117910036F0B6 /* XiangHongUIKit.podspec in Resources */,
 				1324110023703A7E00F5BCFE /* Main.storyboard in Resources */,
+				13F916DE237115770036F0B6 /* xhkit.ui.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +628,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		877F8AE1DBA5E0FBDB27E572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XHKitUIDemo/Pods-XHKitUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XHKitUIDemo/Pods-XHKitUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XHKitUIDemo/Pods-XHKitUIDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6FE239378BDDAEEEBA1CA0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XHKitUIDemo-XHKitUIDemoUITests/Pods-XHKitUIDemo-XHKitUIDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XHKitUIDemo-XHKitUIDemoUITests/Pods-XHKitUIDemo-XHKitUIDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XHKitUIDemo-XHKitUIDemoUITests/Pods-XHKitUIDemo-XHKitUIDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -380,9 +669,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F916D42371150F0036F0B6 /* XHPieChartSliceLayer.m in Sources */,
+				13F916DC2371150F0036F0B6 /* XHAdjustmentImageButton.m in Sources */,
+				13F916CA2371150F0036F0B6 /* XHPopupMenu.m in Sources */,
 				132410FD23703A7E00F5BCFE /* ViewController.m in Sources */,
 				132410F723703A7E00F5BCFE /* AppDelegate.m in Sources */,
+				13F916D12371150F0036F0B6 /* XHCommonThemeViewController.m in Sources */,
+				13F916CE2371150F0036F0B6 /* XHCircleShapeLayer.m in Sources */,
+				13F916DA2371150F0036F0B6 /* XHAlertController.m in Sources */,
+				13F916DB2371150F0036F0B6 /* XHDropDownMenu.m in Sources */,
+				13F916D82371150F0036F0B6 /* XHChartHelper.m in Sources */,
+				13F916CD2371150F0036F0B6 /* XHHorizontalMenuView.m in Sources */,
+				13F916D52371150F0036F0B6 /* XHBarChat.m in Sources */,
+				13F916D62371150F0036F0B6 /* XHPieChart.m in Sources */,
 				1324110823703A7F00F5BCFE /* main.m in Sources */,
+				13F916D72371150F0036F0B6 /* XHBarChatElement.m in Sources */,
+				13F916C82371150F0036F0B6 /* XHPickerView.m in Sources */,
+				13F916D22371150F0036F0B6 /* XHThemeManager.m in Sources */,
+				13F916D02371150F0036F0B6 /* XHUIConfiguration.m in Sources */,
+				13F916C62371150F0036F0B6 /* XHDatePicker.m in Sources */,
+				13F916D32371150F0036F0B6 /* XHMeterChartView.m in Sources */,
+				13F916CC2371150F0036F0B6 /* XHTextView.m in Sources */,
+				13F916CF2371150F0036F0B6 /* XHCircleProgressView.m in Sources */,
+				13F916D92371150F0036F0B6 /* XHChat.m in Sources */,
+				13F916CB2371150F0036F0B6 /* XHDigitalAnimationLabel.m in Sources */,
+				13F916C92371150F0036F0B6 /* XHPopupSectionMenu.m in Sources */,
+				13F916C72371150F0036F0B6 /* XHSecondMenu.m in Sources */,
 				132410FA23703A7E00F5BCFE /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

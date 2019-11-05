@@ -1,0 +1,6 @@
+framework module XiangHongKit {
+  umbrella header "XiangHongKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
