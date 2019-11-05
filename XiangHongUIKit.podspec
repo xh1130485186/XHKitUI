@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "XiangHongUIKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "XiangHongUIKit，界面ui集合。"
   
   spec.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  # spec.source_files = 'UIComponent/*.{h,m}'
+  spec.source_files = 'UIComponent/XHUIKitDefines.h'
   
   spec.subspec 'XHContainer' do |subpec|
     subpec.dependency "XiangHongKit"
@@ -46,10 +46,10 @@ Pod::Spec.new do |spec|
     subpec.source_files = 'UIComponent/XHProgressView/*.{h,m}'
   end
   
-  spec.subspec 'Theme' do |subpec|
-    subpec.dependency "XiangHongKit"
-    subpec.source_files = 'UIComponent/Theme/*.{h,m}'
-  end
+  #spec.subspec 'Theme' do |subpec|
+    #subpec.dependency "XiangHongKit/Common"
+    #subpec.source_files = 'UIComponent/Theme/*.{h,m}'
+  #end
   
   spec.subspec 'XHChart' do |subpec|
     subpec.source_files = 'UIComponent/XHChart/*.{h,m}'
@@ -63,6 +63,12 @@ Pod::Spec.new do |spec|
   spec.subspec 'XHButton' do |subpec|
     subpec.source_files = 'UIComponent/XHButton/*.{h,m}'
   end
+  
+  #spec.subspec 'XHDropDownMenu' do |subpec|
+    #subpec.dependency "XiangHongUIKit/XHButton"
+    #subpec.dependency "XiangHongKit"
+    #subpec.source_files = 'UIComponent/XHDropDownMenu/*.{h,m}'
+  #end
   
   spec.dependency "XiangHongKit"
 
