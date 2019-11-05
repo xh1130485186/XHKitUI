@@ -96,14 +96,12 @@
 		E424E96EB94FA52007C356F4AD8DE868 /* NSAttributedString+XHExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A298818E91A7F901043889E18BC7C87 /* NSAttributedString+XHExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4F9F1D959EB78B3B58B6E8231B43B3C /* UIImage+XHFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E69E08C41D7C24BF90AC11467A4E7E /* UIImage+XHFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E7A2A58F03B78D3E9075E3564E34336A /* XHKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 61ACC2E38E51BCD8E458B988957EAEA1 /* XHKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8E3B7243594ED077A439B157E1BA0D8 /* XHContainerControl.h in Headers */ = {isa = PBXBuildFile; fileRef = DCCCD859F774F92096557C901B2CCC1C /* XHContainerControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC6D2F035D58C475EDE922E0F50CF45E /* NSObject+XHScrollDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 679D512D2BDC586A08964722C0B1FBF5 /* NSObject+XHScrollDirection.m */; };
 		F08A4D9527F22DE4613BCD319E0B16F9 /* XHCommonDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 534BA92D1BB7AC4F64F2647937424CFB /* XHCommonDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F100BF75169E6FED6BF89D312821E082 /* NSDate+XHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F28388B038C7FF8FE676224FB045F5 /* NSDate+XHExtension.m */; };
 		F54C3EFC6361811C6371FCBFFE8D9112 /* XHUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5706A3919EE0489B76268D4723431E28 /* XHUIHelper.m */; };
 		FABAE3E2CE4215CA18A9D553D32CBEC7 /* RFJModelProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9324FA2D8DA56F0DF41A2412DA494114 /* RFJModelProperty.m */; };
 		FC202205B7298137C5432201C20226D3 /* UIImage+XHRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8B5DFB66AE93700F98E96F47E75F16 /* UIImage+XHRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEB3AA84576623AAE81F2F8FA8917AB2 /* XHContainerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E5115E491959FB297382E0148A189FEC /* XHContainerControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,13 +229,11 @@
 		D7404D0BC87419D20C53D4914189651A /* UIImage+XHCompress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+XHCompress.m"; path = "Extensions/UIImage/UIImage+XHCompress.m"; sourceTree = "<group>"; };
 		D92789EEF25F7B0CA19C350BF5907B87 /* Pods-XHUIKitDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XHUIKitDemo.modulemap"; sourceTree = "<group>"; };
 		D99310390F98A429DF8346089FDA9B8F /* UIImage+XHGenerate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+XHGenerate.h"; path = "Extensions/UIImage/UIImage+XHGenerate.h"; sourceTree = "<group>"; };
-		DCCCD859F774F92096557C901B2CCC1C /* XHContainerControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XHContainerControl.h; path = Tools/XHContainer/XHContainerControl.h; sourceTree = "<group>"; };
 		DFDE2AAB5738A0A929F6E67A1896C494 /* RFJModelProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RFJModelProperty.h; path = Tools/RFJModel/RFJModelProperty.h; sourceTree = "<group>"; };
 		E0B8CC0AFA36BE12497D10594DA8E818 /* RFJModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RFJModel.m; path = Tools/RFJModel/RFJModel.m; sourceTree = "<group>"; };
 		E1A3D8B898D60B0B80BFB9061E8FD9FE /* XHKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XHKit.h; sourceTree = "<group>"; };
 		E1F28388B038C7FF8FE676224FB045F5 /* NSDate+XHExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+XHExtension.m"; path = "Extensions/NSDate/NSDate+XHExtension.m"; sourceTree = "<group>"; };
 		E48F563A7576F7C64874900253D22DE0 /* UIView+XHRect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XHRect.h"; path = "Extensions/UIView/UIView+XHRect.h"; sourceTree = "<group>"; };
-		E5115E491959FB297382E0148A189FEC /* XHContainerControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XHContainerControl.m; path = Tools/XHContainer/XHContainerControl.m; sourceTree = "<group>"; };
 		E690BF77B3A32A6B9E0F2A5B327059B8 /* RFJModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RFJModel.h; path = Tools/RFJModel/RFJModel.h; sourceTree = "<group>"; };
 		E71D50216D93AA5E43B970D0E26755B5 /* Pods-XHUIKitDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XHUIKitDemo-frameworks.sh"; sourceTree = "<group>"; };
 		E997B8F974A9AAD60E67B5CF16837B75 /* UIImage+XHBlur.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+XHBlur.h"; path = "Extensions/UIImage/UIImage+XHBlur.h"; sourceTree = "<group>"; };
@@ -547,15 +543,6 @@
 			name = RFJModel;
 			sourceTree = "<group>";
 		};
-		BFCD0F3A1E1697ACB5B9F64D22D90B36 /* XHContainer */ = {
-			isa = PBXGroup;
-			children = (
-				DCCCD859F774F92096557C901B2CCC1C /* XHContainerControl.h */,
-				E5115E491959FB297382E0148A189FEC /* XHContainerControl.m */,
-			);
-			name = XHContainer;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,7 +616,6 @@
 			children = (
 				DAC85EDB3AA34C46A9269504AA77C408 /* QMUIKeyboard */,
 				BC06FB124F316D051BCD9965C259E7EF /* RFJModel */,
-				BFCD0F3A1E1697ACB5B9F64D22D90B36 /* XHContainer */,
 				4B08E793A216CB75B677042463EB4438 /* XHFile */,
 				4F39DA847B22D9FCE46685C9D6EAE724 /* XHKeychain */,
 				E17F60DAEEB53DA978E0DB339DACBD78 /* XHLocation */,
@@ -721,7 +707,6 @@
 				1C1023E2E9363BD71D5C43A59F083715 /* UIView+XHRect.h in Headers */,
 				A80A51BF227E81477092BC7742AF13DE /* UIViewController+BackButtonHandler.h in Headers */,
 				F08A4D9527F22DE4613BCD319E0B16F9 /* XHCommonDefines.h in Headers */,
-				E8E3B7243594ED077A439B157E1BA0D8 /* XHContainerControl.h in Headers */,
 				D72559E7202EF1A9647CBA7A1192F56B /* XHFileManager.h in Headers */,
 				E7A2A58F03B78D3E9075E3564E34336A /* XHKeychain.h in Headers */,
 				9D7A4DAF61A06E084F22AD4160D2873D /* XHKeychainQuery.h in Headers */,
@@ -952,7 +937,6 @@
 				8402C4CC86B44406C4FBF8A476E9971D /* UIView+XHAnimation.m in Sources */,
 				225C58AB25530AF852FD5E2729856AF9 /* UIView+XHRect.m in Sources */,
 				D23F4D51F091071AE478C59D9478CDFC /* UIViewController+BackButtonHandler.m in Sources */,
-				FEB3AA84576623AAE81F2F8FA8917AB2 /* XHContainerControl.m in Sources */,
 				103CE7C0070C43F4CF7BA0168E9BC710 /* XHFileManager.m in Sources */,
 				1C852A36C7D52B2FD3A81A621B445F24 /* XHKeychain.m in Sources */,
 				5EDFF8737A73075CE0DC56E213646636 /* XHKeychainQuery.m in Sources */,

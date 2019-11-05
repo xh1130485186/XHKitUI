@@ -25,23 +25,8 @@ Pod::Spec.new do |spec|
   spec.source_files = 'UIComponent/*.{h,m}'
   
   spec.subspec 'XHContainer' do |subpec|
-  
-    spec.subspec 'XHDatePicker' do |ssubpec|
-      ssubpec.dependency "XiangHongKit"
-      ssubpec.source_files = 'UIComponent/XHContainer/XHDatePicker/*.{h,m}'
-    end
-    spec.subspec 'XHSecondMenu' do |ssubpec|
-      ssubpec.dependency "XiangHongKit"
-      ssubpec.source_files = 'UIComponent/XHContainer/XHSecondMenu/*.{h,m}'
-    end
-    spec.subspec 'XHPickerView' do |ssubpec|
-      ssubpec.dependency "XiangHongKit/Tools/XHContainer"
-      ssubpec.source_files = 'UIComponent/XHContainer/XHPickerView/*.{h,m}'
-    end
-    spec.subspec 'XHPopupMenu' do |ssubpec|
-      ssubpec.dependency "XiangHongKit"
-      ssubpec.source_files = 'UIComponent/XHContainer/XHPopupMenu/*.{h,m}'
-    end
+    ssubpec.dependency 'XiangHongKit'
+    ssubpec.source_files = 'UIComponent/XHContainer/*.{h,m}'
     
   end
   
@@ -54,7 +39,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'XHHorizontalMenu' do |subpec|
-    subpec.dependency "XiangHongKit/Extensions"
+    subpec.dependency 'XiangHongKit/Extensions'
     subpec.source_files = 'UIComponent/XHHorizontalMenu/*.{h,m}'
   end
   
@@ -63,7 +48,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'Theme' do |subpec|
-    subpec.dependency "XiangHongKit/Common"
+    subpec.dependency 'XiangHongKit/Common'
     subpec.source_files = 'UIComponent/Theme/*.{h,m}'
   end
   
@@ -72,7 +57,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'XHAlertController' do |subpec|
-     subpec.dependency "XiangHongKit/Extensions/UIApplication"
+     subpec.dependency 'XiangHongKit/Extensions/UIApplication'
     subpec.source_files = 'UIComponent/XHAlertController/*.{h,m}'
   end
   
@@ -86,7 +71,7 @@ Pod::Spec.new do |spec|
     #subpec.source_files = 'UIComponent/XHDropDownMenu/*.{h,m}'
   #end
   
-  spec.dependency "XiangHongKit"
-  spec.dependency "XHLoading"
+  spec.dependency 'XiangHongKit'
+  spec.dependency 'XHLoading'
 
 end
