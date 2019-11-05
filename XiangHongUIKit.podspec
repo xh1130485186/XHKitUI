@@ -22,54 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  spec.source_files = 'UIComponent/XHUIKitDefines.h'
-  
-  spec.subspec 'XHContainer' do |subpec|
-    subpec.dependency "XiangHongKit"
-    subpec.source_files = 'UIComponent/XHContainer/*.{h,m}'
-  end
-  
-  spec.subspec 'UILabel' do |subpec|
-    subpec.source_files = 'UIComponent/UILabel/*.{h,m}'
-  end
-  
-  spec.subspec 'XHTextView' do |subpec|
-    subpec.source_files = 'UIComponent/XHTextView/*.{h,m}'
-  end
-  
-  spec.subspec 'XHHorizontalMenu' do |subpec|
-    subpec.dependency "XiangHongKit/Extensions"
-    subpec.source_files = 'UIComponent/XHHorizontalMenu/*.{h,m}'
-  end
-  
-  spec.subspec 'XHProgressView' do |subpec|
-    subpec.source_files = 'UIComponent/XHProgressView/*.{h,m}'
-  end
-  
-  #spec.subspec 'Theme' do |subpec|
-    #subpec.dependency "XiangHongKit/Common"
-    #subpec.source_files = 'UIComponent/Theme/*.{h,m}'
-  #end
-  
-  spec.subspec 'XHChart' do |subpec|
-    subpec.source_files = 'UIComponent/XHChart/*.{h,m}'
-  end
-  
-  spec.subspec 'XHAlertController' do |subpec|
-    subpec.dependency "XiangHongKit/Extensions/UIApplication"
-    subpec.source_files = 'UIComponent/XHAlertController/*.{h,m}'
-  end
-  
-  spec.subspec 'XHButton' do |subpec|
-    subpec.source_files = 'UIComponent/XHButton/*.{h,m}'
-  end
-  
-  #spec.subspec 'XHDropDownMenu' do |subpec|
-    #subpec.dependency "XiangHongUIKit/XHButton"
-    #subpec.dependency "XiangHongKit"
-    #subpec.source_files = 'UIComponent/XHDropDownMenu/*.{h,m}'
-  #end
-  
   spec.dependency "XiangHongKit"
+  spec.source_files = 'UIComponent/XHUIKitDefines.h"
 
 end
