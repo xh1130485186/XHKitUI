@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   spec.dependency 'XiangHongKit'
-  
+  spec.public_header_files = 'UIComponent/**/*.{h}'
   
   spec.subspec 'XHButton' do |subpec|
     subpec.source_files = 'UIComponent/XHButton/*.{h,m}'
@@ -59,6 +59,10 @@ Pod::Spec.new do |spec|
   spec.subspec 'XHDropDownMenu' do |subpec|
     subpec.dependency "XiangHongUIKit/XHButton"
     subpec.source_files = 'UIComponent/XHDropDownMenu/*.{h,m}'
- end
+  end
+ 
+  spec.subspec 'Theme' do |subpec|
+    subpec.source_files = 'UIComponent/Theme/*.{h,m}'
+  end
   
 end

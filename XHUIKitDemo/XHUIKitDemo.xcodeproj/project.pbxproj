@@ -835,6 +835,7 @@
 			baseConfigurationReference = FD5ACA2EBE4B82DD1A5E3630 /* Pods-XHUIKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F45EUUYEA;
 				INFOPLIST_FILE = XHUIKitDemo/Info.plist;
@@ -853,6 +854,7 @@
 			baseConfigurationReference = CE5B2C36126F51E24C2323DA /* Pods-XHUIKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F45EUUYEA;
 				INFOPLIST_FILE = XHUIKitDemo/Info.plist;
