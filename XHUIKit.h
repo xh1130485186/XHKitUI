@@ -6,7 +6,6 @@
 //  Copyright © 2019 向洪. All rights reserved.
 //
 
-/*
 
 #ifndef XHUIKit_h
 #define XHUIKit_h
@@ -46,4 +45,3 @@
 
 #endif /* XHUIKit_h */
 
-*/
