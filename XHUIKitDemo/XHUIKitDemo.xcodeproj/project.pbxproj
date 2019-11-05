@@ -135,7 +135,6 @@
 		1388A6812371752F00B06D2B /* XHPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPopupMenu.h; sourceTree = "<group>"; };
 		1388A68923717FBF00B06D2B /* XHSecondMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSecondMenu.h; sourceTree = "<group>"; };
 		1388A68A23717FBF00B06D2B /* XHSecondMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSecondMenu.m; sourceTree = "<group>"; };
-		1388A68C2371818900B06D2B /* XHUIKitDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XHUIKitDefines.h; path = ../../XHUIKitDefines.h; sourceTree = "<group>"; };
 		1388A68D2371818900B06D2B /* XHUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XHUIKit.h; path = ../../XHUIKit.h; sourceTree = "<group>"; };
 		2D8166C6C2B0FEC72874377A /* Pods_XHUIKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHUIKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A59EFCD946C70A8EE3CC014 /* Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-XHUIKitDemo-XHUIKitDemoUITests/Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,7 +202,6 @@
 			children = (
 				1388A614237131D200B06D2B /* UIComponent */,
 				1388A68D2371818900B06D2B /* XHUIKit.h */,
-				1388A68C2371818900B06D2B /* XHUIKitDefines.h */,
 				1388A5DF2371313B00B06D2B /* AppDelegate.h */,
 				1388A5E02371313B00B06D2B /* AppDelegate.m */,
 				1388A5E22371313B00B06D2B /* SceneDelegate.h */,

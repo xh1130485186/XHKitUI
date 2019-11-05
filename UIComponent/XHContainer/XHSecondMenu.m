@@ -7,8 +7,8 @@
 //
 
 #import "XHSecondMenu.h"
-#import "XHUIKitDefines.h"
 #import "UIImage+XHColor.h"
+#import "XHUICommonDefines.h"
 
 #define kIDENTIFIERCELLSECOND_L @"l"
 #define kIDENTIFIERCELLSECOND_R @"r"
@@ -44,7 +44,9 @@
 - (void)setTintColor:(UIColor *)tintColor {
 
     [super setTintColor:tintColor];
-    self.selectedImageView.image = [XHUIKitImage(@"xh_secondmenu_choose") xh_imageWithTintColor:tintColor];
+    NSString *path = XHBundlePathForResource(@"xhkit.ui", [self class], @"xh_secondmenu_choose", @"png", 1);
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
+    self.selectedImageView.image = [image xh_imageWithTintColor:tintColor];
 }
 #pragma mark - getter
 

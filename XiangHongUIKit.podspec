@@ -22,10 +22,11 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   
-  spec.dependency "XiangHongKit"
+  spec.dependency 'XiangHongKit'
   spec.source_files = 'XHUIKitDefines.h'
   # spec.public_header_files = 'XHUIKitDefines.h'
   spec.subspec 'XHContainer' do |subpec|
+    subpec.dependency = 'XiangHongUIKit'
     subpec.source_files = 'UIComponent/XHContainer/*.{h,m}'
   end
  

@@ -9,7 +9,7 @@
 #import "XHDropDownMenu.h"
 #import "UIImage+XHColor.h"
 #import "XHAdjustmentImageButton.h"
-#import "XHUIKitDefines.h"
+#import "XHUICommonDefines.h"
 
 #define Button_Tag 102
 #pragma mark - 下拉菜单蒙版
@@ -95,7 +95,9 @@
 - (UIImageView *)accessoryView {
 
     if (!_accessoryView) {
-        _accessoryView = [[UIImageView alloc] initWithImage:[XHUIKitImage(@"xh_dropDownMenu_selected") xh_imageWithTintColor:_tintColor]];
+        NSString *path = XHBundlePathForResource(@"xhkit.ui", NSClassFromString(@"XHDropDownMenu"), @"xh_dropDownMenu_selected", @"png", 1);
+        UIImage *image = [UIImage imageWithContentsOfFile:path];
+        _accessoryView = [[UIImageView alloc] initWithImage:[image xh_imageWithTintColor:_tintColor]];
     }
     return _accessoryView;
 }
@@ -111,7 +113,9 @@
 - (void)setTintColor:(UIColor *)tinColor {
 
     _tintColor = tinColor;
-    _accessoryView.image = [XHUIKitImage(@"xh_dropDownMenu_selected") xh_imageWithTintColor:_tintColor];
+    NSString *path = XHBundlePathForResource(@"xhkit.ui", NSClassFromString(@"XHDropDownMenu"), @"xh_dropDownMenu_selected", @"png", 1);
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
+    _accessoryView.image = [image xh_imageWithTintColor:_tintColor];
 }
 
 - (void)setSelectRow:(NSInteger)row inColumn:(NSInteger)column {
@@ -357,8 +361,10 @@
        
         [obj setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [obj setTitleColor:weakSelf.tintColor forState:UIControlStateSelected];
-        [obj setImage:[XHUIKitImage(@"xh_dropDownMenu_down") xh_imageWithTintColor:[UIColor grayColor]] forState:UIControlStateNormal];
-        [obj setImage:[XHUIKitImage(@"xh_dropDownMenu_up") xh_imageWithTintColor:tintColor] forState:UIControlStateSelected];
+        UIImage *downImage = [UIImage imageWithContentsOfFile:XHBundlePathForResource(@"xhkit.ui", [self class], @"xh_dropDownMenu_down", @"png", 1)];
+        UIImage *upImage = [UIImage imageWithContentsOfFile:XHBundlePathForResource(@"xhkit.ui", [self class], @"xh_dropDownMenu_up", @"png", 1)];
+        [obj setImage:[downImage xh_imageWithTintColor:[UIColor grayColor]] forState:UIControlStateNormal];
+        [obj setImage:[upImage xh_imageWithTintColor:tintColor] forState:UIControlStateSelected];
     }];
 }
 
@@ -402,8 +408,10 @@
             [menuButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
             [menuButton setTitleColor:_tintColor forState:UIControlStateSelected];
 //            [menuButton setContentEdgeInsets:UIEdgeInsetsMake(0, 14, 0, 14)];
-            [menuButton setImage:[XHUIKitImage(@"xh_dropDownMenu_down") xh_imageWithTintColor:[UIColor grayColor]] forState:UIControlStateNormal];
-            [menuButton setImage:[XHUIKitImage(@"xh_dropDownMenu_up") xh_imageWithTintColor:_tintColor] forState:UIControlStateSelected];
+            UIImage *downImage = [UIImage imageWithContentsOfFile:XHBundlePathForResource(@"xhkit.ui", [self class], @"xh_dropDownMenu_down", @"png", 1)];
+            UIImage *upImage = [UIImage imageWithContentsOfFile:XHBundlePathForResource(@"xhkit.ui", [self class], @"xh_dropDownMenu_up", @"png", 1)];
+            [menuButton setImage:[downImage xh_imageWithTintColor:[UIColor grayColor]] forState:UIControlStateNormal];
+            [menuButton setImage:[upImage xh_imageWithTintColor:_tintColor] forState:UIControlStateSelected];
         }
             
         if ([self.delegate respondsToSelector:@selector(dropDownMenu:titleForColumnAtIndex:)]) {
