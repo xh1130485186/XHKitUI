@@ -42,6 +42,7 @@
 		1388A6832371752F00B06D2B /* XHDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A67D2371752F00B06D2B /* XHDatePicker.m */; };
 		1388A6842371752F00B06D2B /* XHPopupSectionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A67E2371752F00B06D2B /* XHPopupSectionMenu.m */; };
 		1388A6852371752F00B06D2B /* XHPopupMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A67F2371752F00B06D2B /* XHPopupMenu.m */; };
+		1388A6882371770600B06D2B /* XHSecondMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A6872371770600B06D2B /* XHSecondMenu.m */; };
 		281871E73C29A19799D8D998 /* Pods_XHUIKitDemo_XHUIKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E569A897872AA52E9D2C495 /* Pods_XHUIKitDemo_XHUIKitDemoUITests.framework */; };
 		AC5159A502407FD0A5E27AD1 /* Pods_XHUIKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8166C6C2B0FEC72874377A /* Pods_XHUIKitDemo.framework */; };
 /* End PBXBuildFile section */
@@ -134,6 +135,8 @@
 		1388A67F2371752F00B06D2B /* XHPopupMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPopupMenu.m; sourceTree = "<group>"; };
 		1388A6802371752F00B06D2B /* XHPopupSectionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPopupSectionMenu.h; sourceTree = "<group>"; };
 		1388A6812371752F00B06D2B /* XHPopupMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPopupMenu.h; sourceTree = "<group>"; };
+		1388A6862371770600B06D2B /* XHSecondMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XHSecondMenu.h; path = ../../../../XHSecondMenu/XHSecondMenu.h; sourceTree = "<group>"; };
+		1388A6872371770600B06D2B /* XHSecondMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XHSecondMenu.m; path = ../../../../XHSecondMenu/XHSecondMenu.m; sourceTree = "<group>"; };
 		2D8166C6C2B0FEC72874377A /* Pods_XHUIKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHUIKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A59EFCD946C70A8EE3CC014 /* Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-XHUIKitDemo-XHUIKitDemoUITests/Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76BD8E3F15F745C6D0E389B9 /* Pods-XHUIKitDemo-XHUIKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHUIKitDemo-XHUIKitDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-XHUIKitDemo-XHUIKitDemoUITests/Pods-XHUIKitDemo-XHUIKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				1388A67F2371752F00B06D2B /* XHPopupMenu.m */,
 				1388A6802371752F00B06D2B /* XHPopupSectionMenu.h */,
 				1388A67E2371752F00B06D2B /* XHPopupSectionMenu.m */,
+				1388A6862371770600B06D2B /* XHSecondMenu.h */,
+				1388A6872371770600B06D2B /* XHSecondMenu.m */,
 			);
 			path = XHContainer;
 			sourceTree = "<group>";
@@ -657,6 +662,7 @@
 				1388A673237151EC00B06D2B /* XHContainerControl.m in Sources */,
 				1388A665237131D200B06D2B /* XHMeterChartView.m in Sources */,
 				1388A65D237131D200B06D2B /* XHTextView.m in Sources */,
+				1388A6882371770600B06D2B /* XHSecondMenu.m in Sources */,
 				1388A6842371752F00B06D2B /* XHPopupSectionMenu.m in Sources */,
 				1388A661237131D200B06D2B /* XHCircleProgressView.m in Sources */,
 				1388A66B237131D200B06D2B /* XHChat.m in Sources */,

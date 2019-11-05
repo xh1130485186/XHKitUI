@@ -46,10 +46,10 @@ Pod::Spec.new do |spec|
     subpec.source_files = 'UIComponent/XHProgressView/*.{h,m}'
   end
   
-  #spec.subspec 'Theme' do |subpec|
-    #subpec.dependency "XiangHongKit"
-    #subpec.source_files = 'UIComponent/Theme/*.{h,m}'
-  #end
+  spec.subspec 'Theme' do |subpec|
+    subpec.dependency "XiangHongKit"
+    subpec.source_files = 'UIComponent/Theme/*.{h,m}'
+  end
   
   spec.subspec 'XHChart' do |subpec|
     subpec.source_files = 'UIComponent/XHChart/*.{h,m}'
