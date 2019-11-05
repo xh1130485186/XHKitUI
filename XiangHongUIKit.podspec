@@ -69,16 +69,16 @@ Pod::Spec.new do |spec|
     subpec.source_files = 'UIComponent/XHAlertController/*.{h,m}'
   end
   
-  spec.subspec 'XHDropDownMenu' do |subpec|
-    subpec.source_files = 'UIComponent/XHDropDownMenu/*.{h,m}'
-  end
-  
   spec.subspec 'XHButton' do |subpec|
     subpec.source_files = 'UIComponent/XHButton/*.{h,m}'
   end
   
-
-  spec.dependency "XiangHongKit"
+  spec.subspec 'XHDropDownMenu' do |subpec|
+    subpec.dependency "XiangHongKit"
+    subpec.dependency 'XiangHongUIKit/UIComponent/XHButton'
+    subpec.source_files = 'UIComponent/XHDropDownMenu/*.{h,m}'
+  end
+  
   spec.dependency "XHLoading"
 
 end
