@@ -1,47 +1,47 @@
 PODS:
-  - XiangHongKit (0.4.1):
-    - XiangHongKit/Common (= 0.4.1)
-    - XiangHongKit/Extensions (= 0.4.1)
-    - XiangHongKit/Tools (= 0.4.1)
-  - XiangHongKit/Common (0.4.1):
+  - XiangHongKit (0.4.2):
+    - XiangHongKit/Common (= 0.4.2)
+    - XiangHongKit/Extensions (= 0.4.2)
+    - XiangHongKit/Tools (= 0.4.2)
+  - XiangHongKit/Common (0.4.2):
     - XiangHongKit/Extensions/DZNEmptyDataSet
     - XiangHongKit/Extensions/UIImage
     - XiangHongKit/Extensions/UIView
-  - XiangHongKit/Extensions (0.4.1):
-    - XiangHongKit/Extensions/DZNEmptyDataSet (= 0.4.1)
-    - XiangHongKit/Extensions/NSAttributedString (= 0.4.1)
-    - XiangHongKit/Extensions/NSDate (= 0.4.1)
-    - XiangHongKit/Extensions/NSObject (= 0.4.1)
-    - XiangHongKit/Extensions/NSString (= 0.4.1)
-    - XiangHongKit/Extensions/UIApplication (= 0.4.1)
-    - XiangHongKit/Extensions/UIColor (= 0.4.1)
-    - XiangHongKit/Extensions/UIImage (= 0.4.1)
-    - XiangHongKit/Extensions/UIView (= 0.4.1)
-    - XiangHongKit/Extensions/UIViewController (= 0.4.1)
-  - XiangHongKit/Extensions/DZNEmptyDataSet (0.4.1)
-  - XiangHongKit/Extensions/NSAttributedString (0.4.1)
-  - XiangHongKit/Extensions/NSDate (0.4.1)
-  - XiangHongKit/Extensions/NSObject (0.4.1)
-  - XiangHongKit/Extensions/NSString (0.4.1)
-  - XiangHongKit/Extensions/UIApplication (0.4.1)
-  - XiangHongKit/Extensions/UIColor (0.4.1)
-  - XiangHongKit/Extensions/UIImage (0.4.1):
+  - XiangHongKit/Extensions (0.4.2):
+    - XiangHongKit/Extensions/DZNEmptyDataSet (= 0.4.2)
+    - XiangHongKit/Extensions/NSAttributedString (= 0.4.2)
+    - XiangHongKit/Extensions/NSDate (= 0.4.2)
+    - XiangHongKit/Extensions/NSObject (= 0.4.2)
+    - XiangHongKit/Extensions/NSString (= 0.4.2)
+    - XiangHongKit/Extensions/UIApplication (= 0.4.2)
+    - XiangHongKit/Extensions/UIColor (= 0.4.2)
+    - XiangHongKit/Extensions/UIImage (= 0.4.2)
+    - XiangHongKit/Extensions/UIView (= 0.4.2)
+    - XiangHongKit/Extensions/UIViewController (= 0.4.2)
+  - XiangHongKit/Extensions/DZNEmptyDataSet (0.4.2)
+  - XiangHongKit/Extensions/NSAttributedString (0.4.2)
+  - XiangHongKit/Extensions/NSDate (0.4.2)
+  - XiangHongKit/Extensions/NSObject (0.4.2)
+  - XiangHongKit/Extensions/NSString (0.4.2)
+  - XiangHongKit/Extensions/UIApplication (0.4.2)
+  - XiangHongKit/Extensions/UIColor (0.4.2)
+  - XiangHongKit/Extensions/UIImage (0.4.2):
     - XiangHongKit/Extensions/UIColor
-  - XiangHongKit/Extensions/UIView (0.4.1)
-  - XiangHongKit/Extensions/UIViewController (0.4.1)
-  - XiangHongKit/Tools (0.4.1):
-    - XiangHongKit/Tools/QMUIKeyboard (= 0.4.1)
-    - XiangHongKit/Tools/RFJModel (= 0.4.1)
-    - XiangHongKit/Tools/XHFile (= 0.4.1)
-    - XiangHongKit/Tools/XHKeychain (= 0.4.1)
-    - XiangHongKit/Tools/XHLocation (= 0.4.1)
-    - XiangHongKit/Tools/XHTimer (= 0.4.1)
-  - XiangHongKit/Tools/QMUIKeyboard (0.4.1)
-  - XiangHongKit/Tools/RFJModel (0.4.1)
-  - XiangHongKit/Tools/XHFile (0.4.1)
-  - XiangHongKit/Tools/XHKeychain (0.4.1)
-  - XiangHongKit/Tools/XHLocation (0.4.1)
-  - XiangHongKit/Tools/XHTimer (0.4.1)
+  - XiangHongKit/Extensions/UIView (0.4.2)
+  - XiangHongKit/Extensions/UIViewController (0.4.2)
+  - XiangHongKit/Tools (0.4.2):
+    - XiangHongKit/Tools/QMUIKeyboard (= 0.4.2)
+    - XiangHongKit/Tools/RFJModel (= 0.4.2)
+    - XiangHongKit/Tools/XHFile (= 0.4.2)
+    - XiangHongKit/Tools/XHKeychain (= 0.4.2)
+    - XiangHongKit/Tools/XHLocation (= 0.4.2)
+    - XiangHongKit/Tools/XHTimer (= 0.4.2)
+  - XiangHongKit/Tools/QMUIKeyboard (0.4.2)
+  - XiangHongKit/Tools/RFJModel (0.4.2)
+  - XiangHongKit/Tools/XHFile (0.4.2)
+  - XiangHongKit/Tools/XHKeychain (0.4.2)
+  - XiangHongKit/Tools/XHLocation (0.4.2)
+  - XiangHongKit/Tools/XHTimer (0.4.2)
 
 DEPENDENCIES:
   - XiangHongKit
@@ -51,7 +51,7 @@ SPEC REPOS:
     - XiangHongKit
 
 SPEC CHECKSUMS:
-  XiangHongKit: eefc5f968f49127aed2ee9e346dd8eb4da452847
+  XiangHongKit: 836ece1899a7ad2b599f408b74806feb9187decd
 
 PODFILE CHECKSUM: c0c71616c28800bed1571460dd00c6ce19a752cf
 
