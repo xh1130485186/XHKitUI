@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "XiangHongUIKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "XiangHongUIKit，界面ui集合。"
   
   spec.description  = <<-DESC
