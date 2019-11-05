@@ -7,7 +7,7 @@
 //
 
 #import "XHSecondMenu.h"
-#import "XHKitUIDefines.h"
+#import "XHUIKitDefines.h"
 #import "UIImage+XHColor.h"
 
 #define kIDENTIFIERCELLSECOND_L @"l"

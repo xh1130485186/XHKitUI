@@ -1,0 +1,6 @@
+framework module Pods_XHUIKitDemo_XHUIKitDemoUITests {
+  umbrella header "Pods-XHUIKitDemo-XHUIKitDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

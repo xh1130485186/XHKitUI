@@ -1,0 +1,6 @@
+framework module Pods_XHUIKitDemo {
+  umbrella header "Pods-XHUIKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,7 +9,7 @@
 #import "XHDropDownMenu.h"
 #import "UIImage+XHColor.h"
 #import "XHAdjustmentImageButton.h"
-#import "XHKitUIDefines.h"
+#import "XHUIKitDefines.h"
 
 #define Button_Tag 102
 #pragma mark - 下拉菜单蒙版
