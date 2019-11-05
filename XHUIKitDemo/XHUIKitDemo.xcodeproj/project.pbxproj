@@ -41,8 +41,8 @@
 		1388A66C237131D200B06D2B /* XHAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A64E237131D200B06D2B /* XHAlertController.m */; };
 		1388A66D237131D200B06D2B /* XHDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A652237131D200B06D2B /* XHDropDownMenu.m */; };
 		1388A66E237131D200B06D2B /* XHAdjustmentImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A656237131D200B06D2B /* XHAdjustmentImageButton.m */; };
-		1388A6702371450700B06D2B /* XiangHongUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1388A66F2371450600B06D2B /* XiangHongUIKit.podspec */; };
 		1388A673237151EC00B06D2B /* XHContainerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1388A672237151EC00B06D2B /* XHContainerControl.m */; };
+		1388A6752371543F00B06D2B /* XiangHongUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1388A6742371543F00B06D2B /* XiangHongUIKit.podspec */; };
 		281871E73C29A19799D8D998 /* Pods_XHUIKitDemo_XHUIKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E569A897872AA52E9D2C495 /* Pods_XHUIKitDemo_XHUIKitDemoUITests.framework */; };
 		AC5159A502407FD0A5E27AD1 /* Pods_XHUIKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8166C6C2B0FEC72874377A /* Pods_XHUIKitDemo.framework */; };
 /* End PBXBuildFile section */
@@ -134,9 +134,9 @@
 		1388A653237131D200B06D2B /* XHUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHUIKit.h; sourceTree = "<group>"; };
 		1388A655237131D200B06D2B /* XHAdjustmentImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAdjustmentImageButton.h; sourceTree = "<group>"; };
 		1388A656237131D200B06D2B /* XHAdjustmentImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHAdjustmentImageButton.m; sourceTree = "<group>"; };
-		1388A66F2371450600B06D2B /* XiangHongUIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = XiangHongUIKit.podspec; path = ../../XiangHongUIKit.podspec; sourceTree = "<group>"; };
 		1388A671237151EC00B06D2B /* XHContainerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHContainerControl.h; sourceTree = "<group>"; };
 		1388A672237151EC00B06D2B /* XHContainerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHContainerControl.m; sourceTree = "<group>"; };
+		1388A6742371543F00B06D2B /* XiangHongUIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = XiangHongUIKit.podspec; path = ../../XiangHongUIKit.podspec; sourceTree = "<group>"; };
 		2D8166C6C2B0FEC72874377A /* Pods_XHUIKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XHUIKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A59EFCD946C70A8EE3CC014 /* Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-XHUIKitDemo-XHUIKitDemoUITests/Pods-XHUIKitDemo-XHUIKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		76BD8E3F15F745C6D0E389B9 /* Pods-XHUIKitDemo-XHUIKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHUIKitDemo-XHUIKitDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-XHUIKitDemo-XHUIKitDemoUITests/Pods-XHUIKitDemo-XHUIKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,8 +208,8 @@
 				1388A5E32371313B00B06D2B /* SceneDelegate.m */,
 				1388A5E52371313B00B06D2B /* ViewController.h */,
 				1388A5E62371313B00B06D2B /* ViewController.m */,
-				1388A66F2371450600B06D2B /* XiangHongUIKit.podspec */,
 				1388A5E82371313B00B06D2B /* Main.storyboard */,
+				1388A6742371543F00B06D2B /* XiangHongUIKit.podspec */,
 				1388A5EB2371313C00B06D2B /* Assets.xcassets */,
 				1388A5ED2371313C00B06D2B /* LaunchScreen.storyboard */,
 				1388A5F02371313C00B06D2B /* Info.plist */,
@@ -542,7 +542,7 @@
 			files = (
 				1388A5EF2371313C00B06D2B /* LaunchScreen.storyboard in Resources */,
 				1388A5EC2371313C00B06D2B /* Assets.xcassets in Resources */,
-				1388A6702371450700B06D2B /* XiangHongUIKit.podspec in Resources */,
+				1388A6752371543F00B06D2B /* XiangHongUIKit.podspec in Resources */,
 				1388A5EA2371313B00B06D2B /* Main.storyboard in Resources */,
 				1388A65E237131D200B06D2B /* xhkit.ui.bundle in Resources */,
 			);

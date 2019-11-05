@@ -9,14 +9,14 @@ Pod::Spec.new do |spec|
                 XiangHongUIKit是界面UI集合，里面存放不同类型的ui控件。
                    DESC
 
-  spec.homepage     = "https://github.com/xh1130485186/XHKitUI.git"
+  spec.homepage     = "https://github.com/xh1130485186/XHUIKit.git"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "xianghong" => "1130485186@qq.com" }
 
   spec.platform     = :ios, "8.0"
 
-  spec.source       = { :git => "https://github.com/xh1130485186/XHKitUI.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/xh1130485186/XHUIKit.git", :tag => spec.version }
 
   spec.resource  = "UIComponent/xhkit.ui.bundle"
 
