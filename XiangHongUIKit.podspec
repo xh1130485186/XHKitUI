@@ -24,10 +24,9 @@ Pod::Spec.new do |spec|
   
   spec.dependency "XiangHongKit"
   spec.source_files = 'XHUIKitDefines.h'
-  
-  spec.subspec 'XHButton' do |subpec|
-    subpec.dependency "XiangHongKit"
-    subpec.source_files = 'UIComponent/XHButton/*.{h,m}'
-  end
 
+  spec.subspec 'XHContainer' do |subpec|
+    subpec.source_files = 'UIComponent/XHContainer/*.{h,m}'
+  end
+ 
 end
