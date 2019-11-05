@@ -47,7 +47,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'Theme' do |subpec|
-    subpec.dependency "XiangHongKit/Common"
+    subpec.dependency "XiangHongKit"
     subpec.source_files = 'UIComponent/Theme/*.{h,m}'
   end
   

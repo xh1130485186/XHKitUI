@@ -24,7 +24,7 @@
         
     } else {
         
-        _themeTintColor = [[UIApplication sharedApplication] keyWindow].tintColor;
+        _themeTintColor = KeyWindow().tintColor;
     }
     [super viewDidLoad];
     // Do any additional setup after loading the view.

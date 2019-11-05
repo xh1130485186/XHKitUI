@@ -8,6 +8,7 @@
 
 #import "XHUIConfiguration.h"
 #import "XHThemeManager.h"
+#import "XHUICommonDefines.h"
 
 @implementation XHUIConfiguration
 
@@ -36,8 +37,9 @@
     self.darkGrayColor = [UIColor darkGrayColor];
     self.lightGrayColor = [UIColor lightGrayColor];
     self.imageViewBackgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
-    self.themeTintColor = [UIApplication sharedApplication].keyWindow.tintColor;
-    self.assistColor = [UIApplication sharedApplication].keyWindow.tintColor;
+    UIWindow *keyWindow = KeyWindow();
+    self.themeTintColor = keyWindow.tintColor;
+    self.assistColor = keyWindow.tintColor;
     self.separatorColor = [UIColor colorWithWhite:231/255.f alpha:1];
     
 }
