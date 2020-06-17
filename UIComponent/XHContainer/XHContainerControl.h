@@ -26,6 +26,8 @@ typedef NS_ENUM(NSInteger, XHContainerStyle) {
  @return XHContainer
  */
 - (instancetype)initWithSize:(CGSize)size style:(XHContainerStyle)style;
+@property (nonatomic, assign) CGSize size;
+
 
 // 显示，隐藏
 - (void)show;

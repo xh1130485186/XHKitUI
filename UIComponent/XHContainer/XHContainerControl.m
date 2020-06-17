@@ -16,7 +16,6 @@
 @property (nonatomic, weak) UIView *displayView;
 @property (nonatomic, strong) UIVisualEffectView *effectView; // 高斯模糊
 @property (nonatomic, strong) UIButton *mask; // 遮罩
-@property (nonatomic) CGSize size;
 
 @property (nonatomic, strong) NSMutableArray *constraintsCache;
 
