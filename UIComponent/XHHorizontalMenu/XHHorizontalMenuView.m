@@ -109,6 +109,15 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
+
 - (void)initialize {
 
     self.backgroundColor = [UIColor whiteColor];

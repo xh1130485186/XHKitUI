@@ -68,6 +68,8 @@
     [collectionViewConstraints addObject:[NSLayoutConstraint constraintWithItem:collectionView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1 constant:0]];
     [self addConstraints:collectionViewConstraints];
     _collectionViewConstraints = collectionViewConstraints;
+    
+    _collectionView = collectionView;
 }
 
 /// 取消按钮
