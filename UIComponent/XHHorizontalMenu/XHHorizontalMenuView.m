@@ -258,17 +258,20 @@
             CGFloat width = CGRectGetWidth(_collectionView.bounds);
             CGFloat iSpacingWidth = (colum>1?(colum - 1):0)*_interitemSpacing;
             CGFloat maxWidth = width - iSpacingWidth - _contentInset.right - _contentInset.left;
-            __block CGFloat needWidth = 0;
-            [_itemList enumerateObjectsUsingBlock:^(XHHorizontalMenuItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                needWidth += obj.selectedAttString.size.width;
-                obj.itemSize = CGSizeMake(floor(obj.selectedAttString.size.width) + 1, itemHeight);
-                obj.itemTextSize = CGSizeMake(floor(obj.selectedAttString.size.width) + 1, floor(obj.selectedAttString.size.height) + 1);
-            }];
-            if (needWidth < maxWidth) {
+            CGFloat maxItemWidth = colum==0?:maxWidth/colum;
+            CGFloat needMaxItemWidth = 0;
+            for (XHHorizontalMenuItem *obj in _itemList) {
+                CGFloat itemWidth = ceilf(obj.selectedAttString.size.width);
+                needMaxItemWidth = MAX(needMaxItemWidth, itemWidth);
+                obj.itemSize = CGSizeMake(itemWidth, itemHeight);
+                obj.itemTextSize = CGSizeMake(itemWidth, ceilf(obj.selectedAttString.size.height));
+            }
+            
+            if (needMaxItemWidth < maxItemWidth) {
                 itemWidth = floor(maxWidth/colum);
                 [_itemList enumerateObjectsUsingBlock:^(XHHorizontalMenuItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                     obj.itemSize = CGSizeMake(itemWidth, itemHeight);
-                    obj.itemTextSize = CGSizeMake(floor(obj.selectedAttString.size.width) + 1, floor(obj.selectedAttString.size.height) + 1);;
+//                    obj.itemTextSize = CGSizeMake(floor(obj.selectedAttString.size.width) + 1, floor(obj.selectedAttString.size.height) + 1);;
                 }];
             }
             
