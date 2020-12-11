@@ -45,44 +45,64 @@
 - (void)initialize {
     
     self.clipsToBounds = YES;
-    
-    _titleLabel = [[UILabel alloc] init];
-    _titleLabel.alpha = 0.6;
-    _titleLabel.font = [UIFont systemFontOfSize:18];
-    [self addSubview:_titleLabel];
-    
-    _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    NSMutableArray *titleLabelConstraints = [NSMutableArray array];
-    [titleLabelConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_titleLabel]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleLabel)]];
-    [titleLabelConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|[_titleLabel(%lf)]", TitleLabel_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleLabel)]];
-    [self addConstraints:titleLabelConstraints];
-    
-    UIView *line1 = [[UIView alloc] init];
-    line1.backgroundColor = WGrayColor;
-    [self addSubview:line1];
-    line1.translatesAutoresizingMaskIntoConstraints = NO;
-    NSMutableArray *lineConstraints = [NSMutableArray array];
-    [lineConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[line1]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(line1)]];
-    [lineConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-%lf-[line1(0.5)]", TitleLabel_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(line1)]];
-    [self addConstraints:lineConstraints];
- 
+
     
     _contentDatePicker = [[UIDatePicker alloc] init];
-    //    _contentDatePicker.backgroundColor = [UIColor clearColor];
-    [_contentDatePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
-    [_contentDatePicker setDatePickerMode:UIDatePickerModeDate];
-    NSTimeZone * zone = [NSTimeZone defaultTimeZone];
-    [_contentDatePicker setTimeZone:zone];
+    _contentDatePicker.calendar = [NSCalendar currentCalendar];
+    _contentDatePicker.timeZone = [NSTimeZone defaultTimeZone];
+    _contentDatePicker.datePickerMode = UIDatePickerModeDate;
+    
+    if (@available(iOS 14, *)) {
+        
+        _contentDatePicker.preferredDatePickerStyle = UIDatePickerStyleInline;
+        CGFloat scale = CGRectGetWidth(_contentDatePicker.bounds)/CGRectGetHeight(_contentDatePicker.bounds);
+        //        self.style = XHContainerBottom;
+        self.size = CGSizeMake(self.size.width, ceil(self.size.width/scale+DetermineButton_Height));
+        
+        [self addSubview:_contentDatePicker];
+        _contentDatePicker.translatesAutoresizingMaskIntoConstraints = NO;
+        NSMutableArray *contentDatePickerConstraints = [NSMutableArray array];
+        [contentDatePickerConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_contentDatePicker]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentDatePicker)]];
+        [contentDatePickerConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-%lf-[_contentDatePicker]-%lf-|", 0.f, DetermineButton_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentDatePicker)]];
+        [self addConstraints:contentDatePickerConstraints];
+        
+    } else {
+        
+        UIView *line1 = [[UIView alloc] init];
+        line1.backgroundColor = WGrayColor;
+        [self addSubview:line1];
+        line1.translatesAutoresizingMaskIntoConstraints = NO;
+        NSMutableArray *lineConstraints = [NSMutableArray array];
+        [lineConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[line1]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(line1)]];
+        [lineConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-%lf-[line1(0.5)]", TitleLabel_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(line1)]];
+        [self addConstraints:lineConstraints];
+        
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.alpha = 0.6;
+        _titleLabel.font = [UIFont systemFontOfSize:18];
+        [self addSubview:_titleLabel];
+        
+        _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        NSMutableArray *titleLabelConstraints = [NSMutableArray array];
+        [titleLabelConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_titleLabel]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleLabel)]];
+        [titleLabelConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|[_titleLabel(%lf)]", TitleLabel_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(_titleLabel)]];
+        [self addConstraints:titleLabelConstraints];
+        
+        
+        if (@available(iOS 13.4, *)) {
+            _contentDatePicker.preferredDatePickerStyle = UIDatePickerStyleWheels;
+        }
+        
+        [self addSubview:_contentDatePicker];
+        _contentDatePicker.translatesAutoresizingMaskIntoConstraints = NO;
+        NSMutableArray *contentDatePickerConstraints = [NSMutableArray array];
+        [contentDatePickerConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_contentDatePicker]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentDatePicker)]];
+        [contentDatePickerConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-%lf-[_contentDatePicker]-%lf-|", TitleLabel_Height, DetermineButton_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentDatePicker)]];
+        [self addConstraints:contentDatePickerConstraints];
+    }
+    
     [_contentDatePicker addTarget:self action:@selector(datePickerHandelEvent:) forControlEvents:UIControlEventValueChanged];
-//    NSDate *date = [NSDate date];
-//    NSInteger interval = [zone secondsFromGMTForDate:date];
-//    _contentDatePicker.maximumDate = [date dateByAddingTimeInterval:interval];
-    [self addSubview:_contentDatePicker];
-    _contentDatePicker.translatesAutoresizingMaskIntoConstraints = NO;
-    NSMutableArray *contentDatePickerConstraints = [NSMutableArray array];
-    [contentDatePickerConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_contentDatePicker]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentDatePicker)]];
-    [contentDatePickerConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:|-%lf-[_contentDatePicker]-%lf-|", TitleLabel_Height, DetermineButton_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(_contentDatePicker)]];
-    [self addConstraints:contentDatePickerConstraints];
+    
 
     
     
@@ -118,15 +138,15 @@
 
     [super show:displayView];
     _titleLabel.text = [self stringDateForDate:self.contentDatePicker.date];
-    __weak __typeof(self)weakSelf = self;
-    [_contentDatePicker.subviews[0].subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        if (idx != 0) {
-            
-            obj.backgroundColor = weakSelf.tintColor;
-        }
-        
-    }];
+//    __weak __typeof(self)weakSelf = self;
+//    [_contentDatePicker.subviews[0].subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//
+//        if (idx != 0) {
+//
+//            obj.backgroundColor = weakSelf.tintColor;
+//        }
+//
+//    }];
 
 }
 
@@ -178,12 +198,12 @@
 - (void)setTintColor:(UIColor *)tintColor {
 
     _tintColor = tintColor;
-    __weak __typeof(self)weakSelf = self;
-    [_contentDatePicker.subviews[0].subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (idx != 0) {
-            obj.backgroundColor = weakSelf.tintColor;
-        }
-    }];
+//    __weak __typeof(self)weakSelf = self;
+//    [_contentDatePicker.subviews[0].subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        if (idx != 0) {
+//            obj.backgroundColor = weakSelf.tintColor;
+//        }
+//    }];
 }
 
 - (NSDate *)currentDate {

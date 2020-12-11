@@ -61,6 +61,9 @@
  */
 - (void)reload;
 
+
+- (void)dismiss;
+
 @end
 
 /**

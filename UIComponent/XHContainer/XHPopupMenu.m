@@ -115,7 +115,9 @@
         UIImage *image = _items[0].image;
         CGFloat width = MIN(image.size.width, itemWidthMax);
         _itemSize = CGSizeMake(width, width+24);
-        _minimumInteritemSpacing = floor((CGRectGetWidth(self.bounds) - self.itemSize.width*colum) / colum);
+//        _minimumInteritemSpacing = floor((CGRectGetWidth(self.bounds) - self.itemSize.width*colum) / colum);
+        CGFloat spacingCount = MIN(self.items.count, colum);
+        _minimumInteritemSpacing = floor((CGRectGetWidth(self.bounds) - self.itemSize.width*spacingCount) / spacingCount);
         
         [self updateCollectionViewConstraintsWithMaxColum:colum];
         
@@ -135,6 +137,7 @@
     NSInteger colum = (_items.count<maxColum)?_items.count:maxColum;
     CGFloat needHeight = ceil(MAX(row-1, 0)*layout.minimumLineSpacing+row*_itemSize.height)+48;  // 48 为边距，需改的时候注意代理对应也要进行修改
     CGFloat needWidth = colum<maxColum?(_minimumInteritemSpacing*colum+_itemSize.width*colum):CGRectGetWidth(self.bounds);
+//    CGFloat needWidth = CGRectGetWidth(self.bounds);
     self.collectionViewConstraints[2].constant = needWidth;
     self.collectionViewConstraints[3].constant = MIN(needHeight, CGRectGetHeight(self.bounds)-45);
 }

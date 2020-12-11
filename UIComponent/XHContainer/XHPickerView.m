@@ -89,13 +89,13 @@
     [determineButtonConstraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:[NSString stringWithFormat:@"V:[_determineButton(%lf)]|", DetermineButton_Height] options:0 metrics:nil views:NSDictionaryOfVariableBindings(_determineButton)]];
     [self addConstraints:determineButtonConstraints];
     [self.determineButtonConstraintsCache addObjectsFromArray:determineButtonConstraints];
-    __weak __typeof(self)weakSelf = self;
-    [_contentPickerView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        if (idx != 0) {
-            obj.backgroundColor = weakSelf.tintColor;
-        }
-    }];
+//    __weak __typeof(self)weakSelf = self;
+//    [_contentPickerView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//
+//        if (idx != 0) {
+//            obj.backgroundColor = weakSelf.tintColor;
+//        }
+//    }];
     [self updateForStyle];
 }
 
@@ -224,12 +224,12 @@
 - (void)show:(UIView *)displayView {
     
     [super show:displayView];
-    __weak __typeof(self)weakSelf = self;
-    [_contentPickerView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (idx != 0) {
-            obj.backgroundColor = weakSelf.tintColor;
-        }
-    }];
+//    __weak __typeof(self)weakSelf = self;
+//    [_contentPickerView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        if (idx != 0) {
+//            obj.backgroundColor = weakSelf.tintColor;
+//        }
+//    }];
     
 }
 
